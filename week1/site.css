@@ -419,11 +419,22 @@
 
         .list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, minmax(280px, 1fr));
             gap: 2rem;
             padding: 2rem 5%;
             list-style: none;
-            
+        }
+
+        @media (max-width: 980px) {
+            .list {
+                grid-template-columns: repeat(2, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .list {
+                grid-template-columns: 1fr;
+            }
         }
 
         .list li {
