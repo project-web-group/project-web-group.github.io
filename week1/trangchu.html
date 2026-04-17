@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title> Cocoon.com.vn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo brand">
+                <span class="logo"><img src="Cocoon_Vietnam_idnp5sh-lK_0.png" alt="Cocoon" title="thương hiệu" width="60" height="60"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="#">SẢN PHẨM</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li><a href="#">THƯƠNG HIỆU</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').hidden ^= 1">☰</button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu" hidden>
+            <a href="trangchu.html">TRANG CHỦ</a>
+            <a href="#">SẢN PHẨM</a>
+            <a href="#">TIN TỨC</a>
+            <a href="#">THƯƠNG HIỆU</a>
+            <a href="lienhe.html">LIÊN HỆ</a>
+            <a href="#">ĐĂNG NHẬP</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SLIDER - ẢNH MỚI CHẠY 100% -->
+        <section id="home" class="hero">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/476909101_643897367997702_2255164110350546854_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeESID5lhqpNr7xzLyfeiH1HirL6JlFaIOKKsvomUVog4uQfpib62eNk76guNLoQc9kCaDBhDLUNcGBF41Ik5n2c&_nc_ohc=mgceZnDvrisQ7kNvwEub6-O&_nc_oc=AdqRvcjSLkMsF6aoFsrfwMX55o6Cbae461kqN-BLbd41TWTGKJo5RnG5bBDUqmjHX84&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=VtmB8V4FW8fxY3Hg7qf8NQ&_nc_ss=7a3a8&oh=00_Af1lbhixtUvGTH8DsojqLWJgeRHDKjET6WNdhaN3GZq9xA&oe=69E6B124); background-size: cover;">
+                    <div class="slide-content">
+                        <h2>Hãng mỹ phẩm thuần chay</h2>
+                        <p>Câu chuyện thương hiệu Việt: Gói “tinh hoa của đất” vào từng sản phẩm</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">Xem Sản Phẩm</a>
+                            <a href="#" class="btn btn-secondary">Liên Hệ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('Screenshot\ 2026-04-16\ 000844.png'); background-size: 1300px 700px; background-repeat: no-repeat;">
+                    <div class="slide-content">
+                        <h2>Top các sản phẩm bán chạy</h2>
+                        <p>Mỹ phẩm cũng giống như thực phẩm đều là những “món ăn bổ dưỡng” mang đến vẻ đẹp cho con người</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">Xem Sản Phẩm</a>
+                            <a href="#" class="btn btn-secondary">Liên Hệ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('https://image.cocoonvietnam.com/uploads/KV_UP_WEB_3_2_0010d98793.jpg');background-size: 1500px 1000px;background-repeat: no-repeat;">
+                    <div class="slide-content">
+                        <h2>COCOON đã có mặt tại Pháp</h2>
+                        <p>Một cột mốc đáng nhớ trên hành trình mang vẻ đẹp Việt vươn ra thế giới</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">Xem Sản Phẩm</a>
+                            <a href="#" class="btn btn-secondary">Liên Hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <section>
+            <div class="main-container">
+                <div class="content-box" >
+                    <h2 class="title">Triết Lý<br>Thương Hiệu</h2>
+                    <p class="description">Là những người yêu thiên nhiên và đam mê khám phá các nguồn nguyên liệu đặc hữu của Việt Nam, chúng tôi luôn kiên định với những triết lý trên hành trình tìm vẻ đẹp thật sự của làn da.</p>
+                    <button class="timhieuthem"><a href="#">TÌM HIỂU THÊM <span class="arrow">&rarr;</span></a></button>
+                </div>
+            </div>
+        </section>
+
+        <div id="signature">
+            <marquee direction="left" behavior="scroll" scrollamount="4">
+                <h1>MỸ PHẨM 100% THUẦN CHAY CHO NÉT ĐẸP THUẦN VIỆT</h1>
+                <h3 style="font-family:'Times New Roman', Times, serif;"><em>Một thương hiệu viết nên câu chuyện mới cho mỹ phẩm thuần chay "Made In Vietnam"</em></h3>
+            </marquee>
+        </div>
+
+        <section>
+            <aside class="showing" >
+                <h2>Sản Phẩm<br>Nổi Bật</h2>
+                <q class="introduction">Cocoon tự hào khi các sản phẩm mà chúng tôi tạo ra mang đến những thay đổi tuyệt vời trên làn da, mái tóc của bạn.</q>
+                <footer class="end1"><p><b>Khám phá sản phẩm chăm sóc từ COCOON</b></p></footer>
+            </aside>
+            <div id="right">
+                <ul class="list">
+                    <li>
+                        <img src="https://image.cocoonvietnam.com/uploads/avatar_ntt_EBAW_2025_500ml_Artboard_1_6b5235d968.png" alt="Nước tẩy trang bí đao">
+                        <div class="content-img">
+                            <h3 class="product-name">Nước tẩy trang bí đao</h3>
+                            <p class="product-des">Làm sạch sâu mà vẫn dịu nhẹ</p>
+                            <p class="product-price">350.000₫</p>
+                            <button class="add-to-cart">Thêm vào giỏ</button>
+                        </div>
+                    </li>                         
+                    <li>
+                        <img src="https://image.cocoonvietnam.com/uploads/29892166_slide_2_0b4a1c8139.jpg" alt="tẩy tế bào chết COCOON">
+                        <div class="content-img">
+                            <h3 class="product-name">Tẩy Tế Bào Chết Body Cocoon</h3>
+                            <p class="product-des">Làm sạch da chết, làm đều màu da<br>
+                                Khơi dậy năng lượng giúp da trở nên mềm mịn và rạng rỡ</p>
+                                <p class="product-price">350.000₫</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                    </li>
+                    <li>
+                        <img src="https://image.cocoonvietnam.com/uploads/32262548_slide_3_4c163b8983.jpg" alt="Mặt nạ nghệ Hưng Yên">
+                        <div class="content-img">
+                            <h3 class="product-name">Mặt nạ nghệ Hưng Yên</h3>
+                            <p class="product-des">Tái tạo làn da tươi mới, sáng rạng rỡ và đều màu</p>
+                            <p class="product-price">350.000₫</p>
+                            <button class="add-to-cart">Thêm vào giỏ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://image.cocoonvietnam.com/uploads/29892178_slide_3_7ff1ac2322.jpg" alt="Son dưỡng dầu dừa Bến Tre">
+                        <div class="content-img">
+                            <h3 class="product-name">Son dưỡng dầu dừa Bến Tre</h3>
+                            <p class="product-des">Giúp đôi môi mềm mượt, căng mọng, chống khô môi, nứt nẻ do thời tiết.</p>
+                            <p class="product-price">32.000₫</p>
+                            <button class="add-to-cart">Thêm vào giỏ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://image.cocoonvietnam.com/uploads/Tinh_chat_xit_duong_SHG_KV_411995d512.jpg" alt="Tinh chất xịt dưỡng sen Hậu Giang">
+                        <div class="content-img">
+                            <h3 class="product-name">Tinh chất xịt dưỡng sen Hậu Giang</h3>
+                            <p class="product-des">tăng cường độ bóng khỏe tự nhiên, giúp bảo vệ hàng rào độ ẩm, ngăn ngừa và giảm thiểu tình trạng thoát nước qua da</p>
+                            <p class="product-price">368.000₫</p>
+                            <button class="add-to-cart">Thêm vào giỏ</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://image.cocoonvietnam.com/uploads/website_1_99aec50414.png" alt="Sữa chống nắng bí đao 50ml">
+                        <div class="content-img">
+                            <h3 class="product-name">Sữa chống nắng bí đao 50ml</h3>
+                            <p class="product-des">sữa chống nắng bí đao mang lại lớp nền trong trẻo, khoẻ khoắn và cảm giác thoải mái khi sử dụng</p>
+                            <p class="product-price">432.000₫</p>
+                             <button class="add-to-cart">Thêm vào giỏ</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <footer class="end2 see-more"><button class="see-more-btn">Xem tất cả sản phẩm</button></footer>
+        </section>
+
+        <section>
+            <div class="all-img">
+                <div class="img-1">
+                <a href="https://cocoonvietnam.com/bai-viet/cung-cocoon-song-xanh-moi-ngay-diem-xanh-online" target="_blank">
+                 <img src="https://www.elle.vn/wp-content/uploads/2021/03/25/428996/cocoon-thuan-chay-4.jpg" width="500" height="500">
+                </a>
+                    <h2>Cùng Cocoon sống xanh mỗi ngày</h2><br>
+                    <button class="timhieuthem"><a href="https://cocoonvietnam.com/bai-viet/cung-cocoon-song-xanh-moi-ngay-diem-xanh-online" target="_blank">TÌM HIỂU THÊM 
+                        <span class="arrow">&rarr;</span>
+                    </a>
+                </button>
+            </div>
+                <div class="img-2">
+                    <a href="https://www.elle.vn/tin-lam-dep/cocoon-my-pham-thuan-chay-cho-net-dep-thuan-viet/" >
+                           <img src="https://www.elle.vn/wp-content/uploads/2021/04/07/432697/cocoon-hinh-1.jpg" target="_blank" width="500" height="500">
+                        </a>
+                    <h2>Cocoon Vietnam-Từ mầm xanh làm đẹp đến giải thưởng danh giá tại ELLE Beauty Awards 2021</h2>
+                    <button class="timhieuthem">
+                        <a href="https://www.elle.vn/tin-lam-dep/cocoon-my-pham-thuan-chay-cho-net-dep-thuan-viet/" target="_blank">TÌM HIỂU THÊM 
+                            <span class="arrow">&rarr;</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="img-3">
+                    <a href="https://cocoonvietnam.com/bai-viet/ban-co-biet-loai-dong-vat-nao-bi-lam-dung-nhieu-nhat-o-viet-nam" target="_blank"> 
+                             <img src="https://image.cocoonvietnam.com/uploads/255851207_4488384907923767_5021908811223513261_n_d1d0829cfb.jpg" target="_blank" width="500" height="500"  >
+                        </a>
+                    <h2 class="new-name">Da dầu, mụn sẽ “ăn chay” như thế nào?</h2><br>
+                    <button class="timhieuthem">
+                        <a href="https://cocoonvietnam.com/bai-viet/ban-co-biet-loai-dong-vat-nao-bi-lam-dung-nhieu-nhat-o-viet-nam" target="_blank">TÌM HIỂU THÊM 
+                            <span class="arrow">&rarr;</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="end-all">
+        <div class="footer-container">
+            <div class="footer-three-columns">
+                <div class="col-contact">
+                    <div class="footer-logo"><h1>COCOON</h1></div>
+                    <div class="company-name"><strong>SẢN XUẤT VÀ CHỊU TRÁCH NHIỆM VỀ HÀNG HOÁ<br>CÔNG TY TNHH NATURE STORY</strong></div>
+                    <div class="address-text">PHÒNG ĐĂNG KÝ KINH DOANH - SỞ TÀI CHÍNH THÀNH PHỐ HỒ CHÍ MINH CẤP LẦN THỨ 2 NGÀY 25/09/2025.<br>14D1, KHU PHỐ 1A, ĐƯỜNG QUỐC LỘ 1A, PHƯỜNG TÂN THỚI HIỆP, TP. HỒ CHÍ MINH, VIỆT NAM</div>
+                    <div class="contact-line">Hotline: <a href="tel:+8419009300">(+84) 19009300</a></div>
+                    <div class="contact-line">Email: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></div>
+                </div>
+                <div class="col-middle">
+                    <div class="circle-logo"><span><img src="idFImIgUYr_logos.jpeg" alt="Thương hiệu cocoon"></span></div>
+                    <div class="slogan-text"><p>COCOON - Mỹ phẩm thuần chay - cho nét đẹp thuần Việt</p></div>
+                    <div class="social-row">
+                        <a href="https://www.facebook.com/CocoonVietnamOfficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cocoon.vietnam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=cocoon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-policy">
+                    <div class="policy-title">CHÍNH SÁCH</div>
+                    <ul class="policy-list">
+                        <li><a href="#">Tìm kiếm</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a href="#">Chính sách đối trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><div class="copyright">© 2026 Cocoon Vietnam. All rights reserved.</div></div>
+        </div>
+    </footer>
+
+    <script>
+        // Slider JavaScript
+        let slides = document.querySelectorAll('.slide');
+        let dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            currentIndex = index;
+        }
+
+        function nextSlide() {
+            let newIndex = (currentIndex + 1) % slides.length;
+            showSlide(newIndex);
+        }
+
+        function prevSlide() {
+            let newIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(newIndex);
+        }
+
+        window.changeSlide = function(direction) {
+            if (direction === 1) nextSlide();
+            else prevSlide();
+            resetInterval();
+        };
+
+        window.currentSlide = function(index) {
+            showSlide(index);
+            resetInterval();
+        };
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        slideInterval = setInterval(nextSlide, 5000);
+
+        // Add to cart alert
+        document.querySelectorAll('.add-to-cart, .see-more-btn, .btn-primary, .btn-secondary').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if(btn.classList.contains('add-to-cart')) alert('✅ Đã thêm sản phẩm vào giỏ hàng!');
+                else alert('📞 Cảm ơn bạn, chúng tôi sẽ liên hệ sớm!');
+            });
+        });
+    </script>
+</body>
+</html>
