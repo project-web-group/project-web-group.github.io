@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nước tẩy trang bí đao Cocoon</title>
+  <link rel="stylesheet" href="taytrangbidao.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo brand">
+        <span class="logo">
+          <img src="img/logo.svg" alt="Cocoon" title="thương hiệu" width="60" height="60">
+        </span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">TRANG CHỦ</a></li>
+        <li><a href="#">SẢN PHẨM</a></li>
+        <li><a href="#">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="#">THƯƠNG HIỆU</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <div class="cart-wrapper">
+          <a href="giohang.html" class="cart-icon">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="mini-cart" id="mini-cart">
+            <div class="mini-cart-items" id="mini-cart-items"></div>
+            <div class="mini-cart-footer">
+              <div class="mini-cart-total">TỔNG TIỀN: <span id="mini-total-price">0đ</span></div>
+              <div class="mini-cart-actions">
+                <a href="giohang.html" class="btn-view-cart">XEM GIỎ HÀNG</a>
+                <a href="giohang.html" class="btn-checkout">THANH TOÁN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').hidden ^= 1">☰</button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#">TRANG CHỦ</a>
+      <a href="#">SẢN PHẨM</a>
+      <a href="#">TIN TỨC</a>
+      <a href="#">THƯƠNG HIỆU</a>
+      <a href="#">LIÊN HỆ</a>
+      <a href="#">ĐĂNG NHẬP</a>
+    </div>
+  </header>
+  <section class="product-banner">
+    <div class="banner-content">
+      <h1>NƯỚC TẨY TRANG BÍ ĐAO COCOON</h1>
+      <div class="breadcrumb">
+        <a href="#">Trang chủ</a> /
+        <a href="#">Chăm sóc da</a> /
+        <span>Nước tẩy trang bí đao Cocoon</span>
+      </div>
+    </div>
+  </section>
+  <main class="product-page">
+    <div class="product-left">
+      <div class="slider-container">
+        <div class="slide"><img src="img/Tẩy trang bí đao 3.jpg" alt="Ảnh 1"></div>
+        <div class="slide"><img src="img/Tẩy trang bí đao 2.jpg" alt="Ảnh 2"></div>
+        <div class="slide"><img src="img/Tẩy trang bí đao.jpg" alt="Ảnh 3"></div>
+        <div class="slide"><img src="img/Tẩy trang bí đao 6.jpg" alt="Ảnh 4"></div>
+        <div class="slide"><img src="img/Tẩy trang bí đao 5.jpg" alt="Ảnh 5"></div>
+      </div>
+      <div class="thumbnails">
+        <img src="img/Tẩy trang bí đao 3.jpg" alt="Thumb 1" onclick="showSlide(0)">
+        <img src="img/Tẩy trang bí đao 2.jpg" alt="Thumb 2" onclick="showSlide(1)">
+        <img src="img/Tẩy trang bí đao.jpg" alt="Thumb 3" onclick="showSlide(2)">
+        <img src="img/Tẩy trang bí đao 6.jpg" alt="Thumb 3" onclick="showSlide(3)">
+        <img src="img/Tẩy trang bí đao 5.jpg" alt="Thumb 3" onclick="showSlide(4)">
+      </div>
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+    <div class="product-right">
+      <h2>NƯỚC TẨY TRANG BÍ ĐAO COCOON</h2>
+      <div class="info-wrapper">
+        <div class="info-left">
+          <p class="price" id="price">299.000đ</p> 
+          <p class="status">Tình trạng: <span>Còn hàng</span></p>
+          <p class="brand">Thương hiệu: <span>Cocoon</span></p>
+        </div>
+        <div class="info-right">
+          <div class="variants">
+            <h3>Chọn dung tích:</h3>
+            <button class="variant-btn active" data-size="500ml" data-price="299000">500ml</button>
+            <button class="variant-btn" data-size="1000ml" data-price="535000">1000ml</button>
+          </div>
+          <div class="actions">
+            <button class="qty-btn" onclick="changeQty(-1)">-</button>
+            <input type="number" id="quantity" value="1" min="1" class="quantity">
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+            <button class="btn-buy">THÊM VÀO GIỎ</button>
+          </div>
+        </div>
+      </div>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('info')">Thông tin sản phẩm</button>
+        <button class="tab-btn" onclick="showTab('comment')">Đánh giá</button>
+      </div>
+      <div class="tab-content" id="info">
+        <p>Nước tẩy trang bí đao Cocoon (Winter Melon Micellar Water) là dòng tẩy trang thuần chay chuyên biệt cho da dầu, da mụn và da nhạy cảm từ thương hiệu mỹ phẩm Việt Nam Cocoon. Sản phẩm ứng dụng công nghệ Micellar kết hợp với các thành phần tự nhiên giúp làm sạch sâu mà vẫn dịu nhẹ.</p>
+        <p>Thích hợp với: da dầu, da mụn, da hỗn hợp thiên dầu.</p>
+        <p>Thành phần chính: chiết xuất bí đao, rau má, tinh dầu tràm trà và Natrage S150.</p>
+      </div>
+      <div class="tab-content" id="comment" style="display:none;">
+        <div class="review-slider">
+          <button class="prev-review">‹</button>
+          <div class="review-list">
+            <div class="review">
+              <h4>MINH TÀI</h4>
+              <p>Da dầu</p>
+              <div class="rating">★★★★★</div>
+              <h4>Sử dụng nước tẩy trang siêu thích siêu tuyệt vời</h4>
+              <p>
+                Làm sạch rất tốt vừa sạch lớp trang điểm vừa dầu thừa bụi bẩn, sạch vẫn dịu nhẹ cho da,
+                giúp da thông thoáng lỗ chân lông rất tuyệt vời khi sử dụng nước tẩy trang bí đao.
+                Các bạn nên thử một lần, đừng bỏ qua sản phẩm tuyệt vời này nhé ❤️🥰👍😘
+              </p>
+              <small>Ngày đánh giá: 27/03/2022</small>
+              <div class="helpful">
+                <span>Đánh giá hữu ích?</span>
+                <button>👍 36</button>
+                <button>👎 2</button>
+              </div>
+            </div>
+            <div class="review">
+              <h4>LAN ANH</h4>
+              <p>Da nhạy cảm</p>
+              <div class="rating">★★★★☆</div>
+              <h4>Da dịu nhẹ, không bị kích ứng</h4>
+              <p>
+                Mình dùng nước tẩy trang bí đao thấy da sạch mà không bị rát, rất phù hợp cho da nhạy cảm.
+                Mùi tràm trà dễ chịu, sau khi dùng da thoáng và không khô căng. Sẽ mua lại lần sau!
+              </p>
+              <small>Ngày đánh giá: 15/04/2022</small>
+              <div class="helpful">
+                <span>Đánh giá hữu ích?</span>
+                <button>👍 25</button>
+                <button>👎 0</button>
+              </div>
+            </div>
+          </div>
+          <button class="next-review">›</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="usage-section">
+    <div class="video-frame">
+      <video autoplay loop muted controls>
+        <source src="video/taytrangbidao.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="usage-right">
+      <h1>Cách sử dụng</h1>
+      <p>Thấm đều sản phẩm lên bông tẩy trang, nhẹ nhàng lau khắp mặt để làm sạch lớp trang điểm và bụi bẩn. Dịu nhẹ cho vùng môi và mắt.</p>
+
+      <h2>Lượng dùng</h2>
+      <p>Lượng vừa đủ làm ướt 1 mặt bông tẩy trang.</p>
+
+      <h2>Kết cấu</h2>
+      <p>Dạng nước trong suốt không màu.</p>
+
+      <h2>Mùi hương</h2>
+      <p>Mùi tinh dầu tràm trà thoang thoảng.</p>
+
+      <h2>Lưu ý</h2>
+      <p>Chỉ dùng ngoài da.</p>
+      <p>Đóng kín nắp sau khi sử dụng. Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp và nhiệt độ cao.</p>
+
+      <h2>Xuất xứ</h2>
+      <p>Việt Nam</p>
+    </div>
+  </section>
+  <section class="related-products">
+    <h2>CÓ THỂ BẠN SẼ THÍCH</h2>
+    <div class="product-list">
+      <div class="product-item">
+        <a href="dautaytranghoahong.html" class="product-image">
+          <img src="img/Dầu tẩy trang hoa hồng.jpg" alt="Sản phẩm 1" class="default-img">
+          <img src="img/Dầu tẩy trang hoa hồng 3.jpg" alt="Sản phẩm 1 hover" class="hover-img">
+        </a>
+        <div class="product-info">
+          <div class="product-text">
+            <a href="dautaytranghoahong.html" style="text-decoration: none;">
+              <h3>DẦU TẨY TRANG HOA HỒNG</h3>
+            </a>
+            <p>LÀM SẠCH SÂU VÀ DƯỠNG ẨM</p>
+            <span class="price">177.000 đ</span>
+          </div>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+        </div>
+      </div>
+      <div class="product-item">
+        <a href="taytrangsenhaugiang.html" class="product-image">
+          <img src="img/Tẩy trang sen hậu giang.png" alt="Sản phẩm 2" class="default-img">
+          <img src="img/Tẩy trang sen hậu giang 3.png" alt="Sản phẩm 2 hover" class="hover-img">
+        </a>
+        <div class="product-info">
+          <div class="product-text">
+            <a href="taytrangsenhaugiang.html" style="text-decoration: none;">
+              <h3>TẨY TRANG SEN HẬU GIANG</h3>
+            </a>
+            <p>LÀM SẠCH LỚP TRANG ĐIỂM VÀ HỖ TRỢ CÂN BẰNG HỆ VI SINH</p>
+            <span class="price">152.000 đ</span>
+          </div>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+        </div>
+      </div>
+      <div class="product-item">
+        <a href="matnabidao.html" class="product-image">
+          <img src="img/mặt nạ bí đao.jpg" alt="Sản phẩm 3" class="default-img">
+          <img src="img/mặt nạ bí đao 3.jpg" alt="Sản phẩm 3 hover" class="hover-img">
+        </a>
+        <div class="product-info">
+          <div class="product-text">
+            <a href="matnabidao.html" style="text-decoration: none;">
+              <h3>MẶT NẠ BÍ ĐAO</h3>
+            </a>
+            <p>GIẢM DẦU VÀ MỤN</p>
+            <span class="price">152.000 đ</span>
+          </div>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+        </div>
+      </div>
+      <div class="product-item">
+        <a href="gelcaphe.html" class="product-image">
+          <img src="img/gel rửa mặt cà phê 1.jpg" alt="Sản phẩm 4" class="default-img">
+          <img src="img/gel rửa mặt cà phê 3.jpg" alt="Sản phẩm 4 hover" class="hover-img">
+        </a>
+        <div class="product-info">
+          <div class="product-text">
+            <a href="gelcaphe.html" style="text-decoration: none;">
+              <h3>GEL RỬA MẶT CÀ PHÊ ĐẮK LẮK</h3>
+            </a>
+            <p>CHO LÀN DA MỀM MẠI VÀ RẠNG RỠ</p>
+            <span class="price">192.000 đ</span>
+          </div>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="end-all">
+    <div class="footer-container">
+      <div class="footer-three-columns">
+        <div class="col-contact">
+          <div class="footer-logo"><h1>COCOON</h1></div>
+          <div class="company-name"><strong>SẢN XUẤT VÀ CHỊU TRÁCH NHIỆM VỀ HÀNG HOÁ<br>CÔNG TY TNHH NATURE STORY</strong></div>
+          <div class="address-text">PHÒNG ĐĂNG KÝ KINH DOANH - SỞ TÀI CHÍNH THÀNH PHỐ HỒ CHÍ MINH CẤP LẦN THỨ 2 NGÀY 25/09/2025.<br>14D1, KHU PHỐ 1A, ĐƯỜNG QUỐC LỘ 1A, PHƯỜNG TÂN THỚI HIỆP, TP. HỒ CHÍ MINH, VIỆT NAM</div>
+          <div class="contact-line">Hotline: <a href="tel:+8419009300">(+84) 19009300</a></div>
+          <div class="contact-line">Email: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a></div>
+        </div>
+        <div class="col-middle">
+          <div class="circle-logo"><span><img src="img/footer.webp" alt="Thương hiệu cocoon"></span></div>
+          <div class="slogan-text"><p>COCOON - Mỹ phẩm thuần chay - cho nét đẹp thuần Việt</p></div>
+          <div class="social-row">
+            <a href="https://www.facebook.com/CocoonVietnamOfficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/cocoon.vietnam/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/results?search_query=cocoon" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-policy">
+          <div class="policy-title">CHÍNH SÁCH</div>
+          <ul class="policy-list">
+            <li><a href="#">Tìm kiếm</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Chính sách đối trả</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><div class="copyright">© 2026 Cocoon Vietnam. All rights reserved.</div></div>
+    </div>
+  </footer>
+  <div class="cart-modal-overlay" id="cart-modal">
+    <div class="cart-modal-box">
+      <div class="cart-modal-header">
+        <h3>GIỎ HÀNG HIỆN CÓ (<span id="modal-cart-count">0</span>) SẢN PHẨM</h3>
+        <button class="close-modal" onclick="closeCartModal()">×</button>
+      </div>
+      <div class="cart-modal-body">
+        <table class="modal-table">
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Đơn giá</th>
+              <th style="text-align:center;">Số lượng</th>
+              <th>Thành tiền</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="modal-cart-items"></tbody>
+        </table>
+      </div>
+      <div class="cart-modal-footer">
+        <div class="modal-total-wrap">TỔNG: <span id="modal-total-sum">0đ</span></div>
+        <div class="modal-buttons">
+          <a href="giohang.html" class="btn-dark">GIỎ HÀNG</a>
+          <a href="giohang.html" class="btn-dark">THANH TOÁN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
