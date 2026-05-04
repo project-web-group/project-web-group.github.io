@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f6f1eb, #f0e4d7);
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #e6ccb2;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  filter: blur(120px);
+}
+body::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #d4a373;
+  border-radius: 50%;
+  bottom: -120px;
+  right: -120px;
+  filter: blur(120px);
+}
+.box {
+  width: 370px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 250, 245, 0.8);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  z-index: 1;
+  animation: fadeIn 0.6s ease;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #5c4433;
+}
+.link {
+  text-align: center;
+  margin-top: 12px;
+  color: #a98467;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.link:hover {
+  color: #c97b63;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #e5d5c5;
+  background: #fff;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #d4a373;
+  box-shadow: 0 0 8px rgba(212,163,115,0.3);
+  outline: none;
+}
+.password-box {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.forgot {
+  cursor: pointer;
+  color: #a98467;
+}
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 18px;
+  border-radius: 25px;
+  border: none;
+
+  background: linear-gradient(135deg, #d4a373, #c97b63);
+  color: white;
+
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,123,99,0.4);
+}
+
+#dashboard {
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  display: none;
+}
