@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCOON - Mỹ phẩm</title>
+    <link rel="stylesheet" href="trangsp2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-link.active {
+            background: #fbfafa;
+            color: #0c0c0c;
+        }
+
+        .page-link {
+            background: #080808;
+            color: #fffefe;
+        }
+
+
+        .page-next {
+            background: #080808;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo brand">
+                <span class="logo"><img src="https://cocoonvietnam.com/_nuxt/img/logo.f502f17.svg" alt="Cocoon"
+                        title="thương hiệu" width="60" height="60"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="trangsp1.html">SẢN PHẨM</a></li>
+                <li><a href="trangchu.html">TIN TỨC</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li><a href="thuonghieu.html">THƯƠNG HIỆU</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="giohangfull.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').hidden ^= 1">☰</button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu" hidden>
+            <a href="trangchu.html">TRANG CHỦ</a>
+            <a href="trangsp1.html">SẢN PHẨM</a>
+            <a href="trangchu.html">TIN TỨC</a>
+            <a href="thuonghieu.html">THƯƠNG HIỆU</a>
+            <a href="lienhe.html">LIÊN HỆ</a>
+            <a href="#">ĐĂNG NHẬP</a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <main class="main-content">
+                <div class="section-header">
+                    <h2 class="main-title">TẤT CẢ SẢN PHẨM</h2>
+                    <div class="divider"></div>
+                    <p class="sub-title">100% Thuần Chay - Tự hào mỹ phẩm Việt</p>
+                </div>
+                <div class="search-toolbar">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm (vd: gi, gel rửa mặt...)">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <button class="clear-search" style="display: none;"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="img/img/thuong-hieu-cocoon(1).jpg" alt="Product 1">
+                            </a>
+                        </div>
+                        <h3 class="product-name">Mặt nạ nghệ hưng yên</h3>
+                        <p class="product-desc"> Mặt nạ từ tinh bột nghệ giàu Curcuminoid kết hợp với Vitamin B3 </p>
+                        <p class="product-price">339,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://image.cocoonvietnam.com/uploads/29892140_slide_2_6c04e56ea2.jpg"
+                                    alt="Product 2">
+                            </a>
+                        </div>
+                        <h3 class="product-name">Mặt nạ nghệ bí đao</h3>
+                        <p class="product-desc">Mặt nạ bí đao gồm thành phần chính là bí đao thanh mát, bổ sung thêm rau
+                            má </p>
+                        <p class="product-price">339,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://image.cocoonvietnam.com/uploads/Tinh_chat_xit_duong_SHG_KV_411995d512.jpg"
+                                    alt="Product 3">
+                            </a>
+                        </div>
+                        <h3 class="product-name">Tinh chất xịt dưỡng sen Hậu Giang</h3>
+                        <p class="product-desc">Tinh chất xịt dưỡng Sen Hậu Giang có kết cấu hai tầng dầu dưỡng và tinh
+                            chất hòa quyện</p>
+                        <p class="product-price">368,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://product.hstatic.net/200000551679/product/32844850_slide_3_86ae96b4ca_d06d083001014ce286cded0539723cc0_1024x1024.jpg"
+                                    alt="Product 4">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Tinh chất bí đao</h3>
+                        <p class="product-desc"> Một công thức mạnh mẽ với chiết xuất bí đao, 15% niacinamide tinh
+                            khiết, 4% NAG phối hợp cùng dầu lá neem </p>
+                        <p class="product-price">229,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://file.hstatic.net/200000868185/file/1_91db680c77524e4a8b02d855c0481cfb.png"
+                                    alt="Product 5">
+                            </a>
+                        </div>
+                        <h3 class="product-name">Tinh chất nghệ Hưng Yên C22</h3>
+                        <p class="product-desc">Thích hợp với mọi loại da</p>
+                        <p class="product-price">457,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://image.cocoonvietnam.com/uploads/29892134_slide_2_15f2c41040.jpg"
+                                    alt="Product 6">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Tinh chất hoa hồng</h3>
+                        <p class="product-desc">Thích hợp với Da khô, Da hỗn hợp thiên khô, Da thường</p>
+                        <p class=" product-price">261,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://myphamthuanchay.com/data/upload_file/Image/2536/1300-cham-mun3.jpg"
+                                    alt="Product 7">
+                            </a>
+                        </div>
+                        <h3 class="product-name">Dung dịch chấm mụn bí đao</h3>
+                        <p class="product-desc">Thích hợp với da mụn, thành phần chính: Với chiết xuất bí đao, Rau má,
+                            Tràm trà .</p>
+                        <p class="product-price">280,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://image.cocoonvietnam.com/uploads/29892144_slide_2_a241a3841e.jpg"
+                                    alt="Product 8">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Cà phê Đắk Lắk làm sạch da chết mặt</h3>
+                        <p class="product-desc">Thích hợp với mọi loại da, thành phần chính: Hạt cà phê nguyên chất và
+                            bơ ca cao.</p>
+                        <p class="product-price">175,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://image.cocoonvietnam.com/uploads/Avatar_Website_Sap_Duong_Am_Sen_Hau_Giang_30ml_00f70209be.jpg"
+                                    alt="Product 9">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Sáp dưỡng ẩm đa năng sen Hậu Giang</h3>
+                        <p class="product-desc">Thông tin: Với sức mạnh của chiết xuất hoa sen, bơ hạt mỡ,
+                            madecassoside, vitamin B5, B12 </p>
+                        <p class="product-price">192,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://image.cocoonvietnam.com/uploads/thach_nghe_61d354eb3e.png"
+                                    alt="Product 10">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Thạch nghệ Hưng Yên</h3>
+                        <p class="product-desc"> Với kết cấu mỏng nhẹ, thạch nghệ Hưng Yên mang những dưỡng chất từ củ
+                            nghệ </p>
+                        <p class="product-price">378,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://myphamthuanchay.com/data/upload_file/Image/x%E1%BB%8Bt-khoang/xit-khoang-nghe-hung-yen-cocoon-2.jpg"
+                                    alt="Product 11">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Xịt khóa nghệ Hưng Yên</h3>
+                        <p class="product-desc">Một lớp sương mịn từ chiết xuất củ nghệ, muối khoáng kết hợp cùng enzym
+                            SOD, EGCG và các axit amin sẽ bao phủ làn da giúp cấp ẩm tức thời,</p>
+                        <p class="product-price">212,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="#" target="_blank">
+                                <img src="https://ann.com.vn/wp-content/uploads/25530_cocoon-winter-melon-sun-fluid-broad-spectrum-4cfdfd3fe6094036be8490dd6a85a93c-1024x1024-photoroom-2_20241028101342.png"
+                                    alt="Product 12">
+                            </a>
+
+                        </div>
+                        <h3 class="product-name">Sữa Chống nắng bí đao</h3>
+                        <p class="product-desc">Thích hợp với Da dầu, da mụn, nhạy cảm,thành phần: các màng lọc UV thế
+                            hệ mới, chiết xuất bí đao, Synoxyl AZ và Melanin</p>
+                        <p class="product-price">432,000đ</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="trangsp1.html" class="page-link">1</a>
+                    <a href="trangsp2.html" class="page-link active">2</a>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="end-all">
+        <div class="footer-container">
+            <div class="footer-three-columns">
+                <div class="col-contact">
+                    <div class="footer-logo">
+                        <h1>COCOON</h1>
+                    </div>
+                    <div class="company-name"><strong>SẢN XUẤT VÀ CHỊU TRÁCH NHIỆM VỀ HÀNG HOÁ<br>CÔNG TY TNHH NATURE
+                            STORY</strong></div>
+                    <div class="address-text">PHÒNG ĐĂNG KÝ KINH DOANH - SỞ TÀI CHÍNH THÀNH PHỐ HỒ CHÍ MINH CẤP LẦN THỨ
+                        2 NGÀY 25/09/2025.<br>14D1, KHU PHỐ 1A, ĐƯỜNG QUỐC LỘ 1A, PHƯỜNG TÂN THỚI HIỆP, TP. HỒ CHÍ MINH,
+                        VIỆT NAM</div>
+                    <div class="contact-line">Hotline: <a href="tel:+8419009300">(+84) 19009300</a></div>
+                    <div class="contact-line">Email: <a href="mailto:WE@COCOONVIETNAM.COM">WE@COCOONVIETNAM.COM</a>
+                    </div>
+                </div>
+                <div class="col-middle">
+                    <div class="circle-logo"><span><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2-kHRdvQGzOEB8-2pWYt1e8dzcmWdiu8PH5uniCXau7wp49mwG4_vfN0vSurXrXpGshdOqQEjiWSpmg3TqhEphiUc8ag&s&ec=121638510"
+                                alt="Thương hiệu cocoon"></span></div>
+                    <div class="slogan-text">
+                        <p>COCOON - Mỹ phẩm thuần chay - cho nét đẹp thuần Việt</p>
+                    </div>
+                    <div class="social-row">
+                        <a href="https://www.facebook.com/CocoonVietnamOfficial" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cocoon.vietnam/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=cocoon" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-policy">
+                    <div class="policy-title">CHÍNH SÁCH</div>
+                    <ul class="policy-list">
+                        <li><a href="#">Tìm kiếm</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                        <li><a href="trangchu.html">Giới thiệu</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a href="#">Chính sách đối trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2026 Cocoon Vietnam. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const searchInput = document.querySelector('.search-input');
+        const clearBtn = document.querySelector('.clear-search');
+        const productCards = document.querySelectorAll('.product-card');
+
+
+        function filterProducts() {
+            const query = searchInput.value.trim().toLowerCase();
+            productCards.forEach(card => {
+                const title = card.querySelector('.product-name') ? .textContent.toLowerCase() || '';
+                const matches = query === '' || title.startsWith(query) || title.includes(query);
+                card.style.display = matches ? 'block' : 'none';
+            });
+            if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
+        }
+
+
+        function clearSearch() {
+            searchInput.value = '';
+            filterProducts();
+            searchInput.focus();
+        }
+
+
+        if (searchInput) {
+            searchInput.addEventListener('input', filterProducts);
+            if (clearBtn) clearBtn.addEventListener('click', clearSearch);
+        }
+
+        function getCart() {
+            return JSON.parse(localStorage.getItem('cocoonCart')) || [];
+        }
+
+
+        function saveCart(cart) {
+            localStorage.setItem('cocoonCart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+
+        function updateCartCount() {
+            let cart = getCart();
+            let total = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+            const countEl = document.querySelector('.cart-count');
+            if (countEl) countEl.innerText = total;
+        }
+
+
+        // Thêm sản phẩm vào giỏ
+        function addToCart(product) {
+            let cart = getCart();
+            let existing = cart.find(item => item.id === product.id);
+
+            if (existing) {
+                existing.quantity = (existing.quantity || 1) + 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    quantity: 1
+                });
+            }
+
+            saveCart(cart);
+
+        }
+
+
+
+        document.querySelectorAll('.add-to-cart').forEach((btn, index) => {
+            btn.addEventListener('click', function () {
+                const card = this.closest('.product-card');
+                const name = card.querySelector('.product-name') ? .innerText || 'Sản phẩm';
+                const priceText = card.querySelector('.product-price') ? .innerText || '0';
+                const price = parseInt(priceText.replace(/[^0-9]/g, ''));
+                const img = card.querySelector('.product-image img') ? .src || '';
+
+                addToCart({
+                    id: Date.now() + index,
+                    name: name,
+                    price: price,
+                    image: img
+                });
+            });
+        });
+
+        updateCartCount();
+    </script>
+</body>
+
+</html>
