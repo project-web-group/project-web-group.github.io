@@ -144,20 +144,9 @@ header {
     padding: 0.5rem 0;
     border-bottom: 1px solid #f5e9dd;
 }
-
-
-/* BODY */
-
-
-
-
-
-
-
 .dropdown {
     position: relative;
 }
-
 
 .dropdown-menu {
     position: absolute;
@@ -191,7 +180,7 @@ header {
 }
 
 
-/* LOGO */
+
 .logo {
     font-size: 28px;
     font-weight: 600;
@@ -199,7 +188,7 @@ header {
 }
 
 
-/* SEARCH */
+
 .search-wrapper {
     display: flex;
     align-items: center;
@@ -210,9 +199,9 @@ header {
 }
 
 
-/* BANNER */
+
 .banner {
-    background: url('img/anhbia3.jpg') center/cover;
+    background: url('img/img/thuong-hieu-cocoon\(1\).jpg') center/cover;
     min-height: 400px;
     display: flex;
     justify-content: center;
@@ -227,7 +216,7 @@ header {
 }
 
 
-/* MAIN */
+
 .main-content {
     background: rgba(248, 240, 232, 0.95);
     padding: 24px;
@@ -567,7 +556,7 @@ header {
 }
 
 
-/* PAGINATION */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -691,7 +680,6 @@ header {
     display: inline-block;
 }
 
-
 .social-row a:hover {
     color: #e0bc8c;
     transform: translateY(-3px);
@@ -740,8 +728,6 @@ header {
     margin-top: 2rem;
     font-size: 0.75rem;
 }
-
-
 
 @media (max-width: 768px) {
     .menu-toggle {
